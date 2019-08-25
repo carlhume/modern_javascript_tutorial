@@ -1,8 +1,8 @@
 "use strict"
-let origin_message = 'I am the original message';
-let copied_message = origin_message;
-alert(origin_message);
-alert(copied_message);
-origin_message = 'I am the original message modified';
-alert(origin_message);
-alert(copied_message);
+let originMessage = 'I am the original message';
+let messageInAnotherVariable = originMessage;
+alert(originMessage);
+alert(messageInAnotherVariable);
+originMessage = 'I am the original message modified';
+alert(originMessage);
+alert(messageInAnotherVariable);
