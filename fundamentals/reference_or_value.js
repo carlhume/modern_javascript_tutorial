@@ -1,3 +1,4 @@
+"use strict"
 let origin_message = 'I am the original message';
 let copied_message = origin_message;
 alert(origin_message);
