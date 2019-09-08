@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <script src='./function_basics.js'></script>
+        <script>
+            function printMinOnScreen( locationToPrint, aNumber, anotherNumber ) {
+                minNumber = min( aNumber, anotherNumber );
+                outputString = "min( " + aNumber + ", " + anotherNumber + " ) = " + minNumber;
+                document.getElementById( locationToPrint ).innerHTML = outputString; 
+            }
+
+            function printPowOnScreen( locationToPrint, aNumber, anExponent ) {
+                answer = pow( aNumber, anExponent );
+                outputString = "pow( " + aNumber + ", " + anExponent + " ) = " + answer;
+                document.getElementById( locationToPrint ).innerHTML = outputString; 
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Testing the min() function</h3>
+        <div id="min_of_2_5_output"><script>printMinOnScreen( "min_of_2_5_output", 2, 5 );</script></div>
+        <div id="min_of_3_neg1_output"><script>printMinOnScreen( "min_of_3_neg1_output", 3, -1 );</script></div>
+        <div id="min_of_1_1_output"><script>printMinOnScreen( "min_of_1_1_output", 1, 1 );</script></div>
+
+        <h3>Testing the pow() function</h3>
+        <div id="pow_3_2_output"><script>printPowOnScreen( "pow_3_2_output", 3, 2 );</script></div>
+        <div id="pow_3_3_output"><script>printPowOnScreen( "pow_3_3_output", 3, 3 );</script></div>
+        <div id="pow_1_100_output"><script>printPowOnScreen( "pow_1_100_output", 1, 100 );</script></div>
+    </body>
+</html>

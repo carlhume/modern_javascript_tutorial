@@ -1,5 +1,3 @@
-"use strict"
-
 function alertEvenNumbersTo( ceiling ) {
 
     alert( `Alert with even numbers up to ${ceiling}` );
