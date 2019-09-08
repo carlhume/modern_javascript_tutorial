@@ -5,14 +5,14 @@
         <script src='./function_basics.js'></script>
         <script>
             function printMinOnScreen( locationToPrint, aNumber, anotherNumber ) {
-                minNumber = min( aNumber, anotherNumber );
-                outputString = "min( " + aNumber + ", " + anotherNumber + " ) = " + minNumber;
+                let minNumber = min( aNumber, anotherNumber );
+                let outputString = "min( " + aNumber + ", " + anotherNumber + " ) = " + minNumber;
                 document.getElementById( locationToPrint ).innerHTML = outputString; 
             }
 
             function printPowOnScreen( locationToPrint, aNumber, anExponent ) {
-                answer = pow( aNumber, anExponent );
-                outputString = "pow( " + aNumber + ", " + anExponent + " ) = " + answer;
+                let answer = pow( aNumber, anExponent );
+                let outputString = "pow( " + aNumber + ", " + anExponent + " ) = " + answer;
                 document.getElementById( locationToPrint ).innerHTML = outputString; 
             }
         </script>
